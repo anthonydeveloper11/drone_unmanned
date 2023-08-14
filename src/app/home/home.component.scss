@@ -110,7 +110,7 @@
                     font-size: 54px;
                 }
                 @media screen and (max-width: 768px) {
-                    font-size: 50px;
+                    font-size: 40px;
                 }
                 @media screen and (max-width: 600px) {
                     font-size: 35px;
@@ -199,7 +199,7 @@
             padding: 110px 0 0;
             .left-section {
                 @media screen and (max-width: 990px) {
-                    padding-bottom: 0;
+                    // padding-bottom: 0;
                     margin-bottom: -80px;
                 }
                 h4 {
@@ -234,7 +234,7 @@
         .noLimitImage {
             display: inline-block;
             width: 50%;
-            background: url(../../assets/images/noLimits.png) no-repeat center;
+            background: url(../../assets/images/aboutus.png) no-repeat center;
             background-size: cover;
             height: 100%;
             position: absolute;
@@ -260,6 +260,38 @@
                     display: none;
                 }
             }
+            &.why-roter {
+                background: none;
+                ul {
+                    padding-top: 70px;
+                    @media screen and (max-width: 1400px) {
+                        text-align: center;
+                        padding-top: 0px;
+                    }
+                    li {
+                        width: 42%;
+                        display: inline-block;
+                        position: relative;
+                        img {
+                            max-width: 100%;
+                        }
+                        @media screen and (max-width: 1400px) {
+                            width: 52%;
+                        }
+                        h6 {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 25px;
+                            color: #FFF;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
         }
         .themeBg {
             display: block;
@@ -267,10 +299,10 @@
             width: 40%;
             min-width: 750px;
             float: right;
-            height: 90%;
+            height: 75%;
             position: absolute;
             right: 0;
-            bottom: -80px;
+            bottom: 20px;
             z-index: 1;
             border-top-left-radius: 20px;
             margin-top: 30px;
@@ -296,9 +328,10 @@
         }
         .left-section {
             width: 45%;
-            padding: 70px 0;
+            padding: 90px 0 150px;
             @media screen and (max-width: 990px) {
                 width: 100%;
+                padding: 20px 0 80px;
             }
             h4 {
                 color: #333;
@@ -324,7 +357,7 @@
                         font-size: 75px;
                     }
                     @media screen and (max-width: 480px) {
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                 }
                 p {
@@ -336,6 +369,13 @@
                     padding-bottom: 20px;
                 }
             }
+        }
+        &.darkBg {
+            background: #252525;
+            padding-top: 70px;
+        }
+        @media screen and (max-width: 768px ) {
+            padding-top: 70px;
         }
     }
     button.btn {
@@ -432,8 +472,9 @@
                 }
             }
             &.right-part {
-                padding: 70px 30px;
+                padding: 70px 10px;
                 width: 38%;
+                position: relative;
                 @media screen and (max-width: 990px) {
                     display: block;
                     width: 100%;
@@ -441,17 +482,17 @@
                 }
                 h4 {
                     color: #333;
-                    font-size: 64px;
+                    font-size: 47px;
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
                     text-transform: uppercase;
                     font-family: Metropolis-Bold;
-                    @media screen and (max-width: 1400px) {
-                        font-size: 50px;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 42px;
                     }
-                    @media screen and (max-width: 640px) {
-                        font-size: 45px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 54px;
                     }
                     @media screen and (max-width: 480px) {
                         font-size: 35px;
@@ -470,6 +511,173 @@
                 width: 100%;
                 top: -110px;
             }
+        }
+    }
+    &.products {
+        background: #f5f5f5;
+        h3 {
+            color: #151515;
+            padding-top: 50px;
+        }
+        .drones {
+            .sub-heading {
+                color: #151515;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                text-transform: uppercase;
+                @media screen and (max-width: 990px) {
+                    font-size: 24px;
+                    max-width: 390px;
+                    margin: 0 auto 10px;
+                }
+            }
+            ul {
+                li {
+                    max-width: 400px;
+                    height: 240px;
+                    @media screen and (max-width: 1440px) {
+                        height: 220px;
+                    }
+                    @media screen and (max-width: 1200px) {
+                        height: 200px;
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        height: 170px;
+                        width: 100%;
+                    }
+                    &.rect-1 a {
+                        background-image: url(../../assets/images/product1.png);
+                    }
+                    &.rect-2 a {
+                        background-image: url(../../assets/images/product2.png);
+                    }
+                    &.rect-3 a {
+                        background-image: url(../../assets/images/product3.png);
+                    }
+                    a {
+                        height: 190px;
+                        @media screen and (max-width: 1440px) {
+                            height: 175px;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            height: 150px;
+                            h5 {
+                                font-size: 22px
+                            }
+                        }
+                        @media screen and (max-width: 990px) {
+                            height: 175px;
+                        }
+                        strong {
+                            color: #fff;
+                        }
+                        h5 {
+                            text-align: left;
+                            bottom: 10px;
+                            padding-left: 20px;
+                        }
+                        h3 {
+                            color: #333;
+                            background: #fff;
+                            text-align: center;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            top: 6px;
+                            width: auto;
+                            position: absolute;
+                            border-bottom-right-radius: 20px;
+                            padding: 5px 15px;
+                            display: inline;
+                            left: 4px;
+                            border-top-left-radius: 12px;
+                            @media screen and (max-width: 1200px) {
+                                top: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.multipurpose {
+                ul {
+                    li {
+                        max-width: 400px;
+                        height: 240px;
+                        @media screen and (max-width: 1440px) {
+                            height: 220px;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            height: 200px;
+                            width: 100%;
+                        }
+                        @media screen and (max-width: 768px) {
+                            height: 170px;
+                            width: 100%;
+                        }
+                        &.rect-1 a {
+                            background-image: url(../../assets/images/product4.png);
+                        }
+                        &.rect-2 a {
+                            background-image: url(../../assets/images/product5.png);
+                        }
+                        &.rect-3 a {
+                            background-image: url(../../assets/images/product6.png);
+                        }
+                    }
+                }
+            }
+            &.andMore {
+                ul {
+                    li {
+                        max-width: 400px;
+                        height: 240px;
+                        @media screen and (max-width: 1440px) {
+                            height: 220px;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            height: 200px;
+                            width: 100%;
+                        }
+                        @media screen and (max-width: 768px) {
+                            height: 170px;
+                            width: 100%;
+                        }
+                        &.rect-1 a {
+                            background-image: url(../../assets/images/product7.png);
+                        }
+                        &.rect-2 a {
+                            background-image: url(../../assets/images/product8.png);
+                        }
+                        &.rect-3 a {
+                            background-image: url(../../assets/images/product9.png);
+                        }
+                    }
+                }
+            }
+        }
+        .allProducts {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            width: 260px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &.sliderSection {
+        padding-bottom: 150px;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 30px;
+            padding-top: 0;
         }
     }
 }
